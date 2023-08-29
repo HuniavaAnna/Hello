@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y \
         git \
             --no-install-recommends
 
-RUN docker-php-ext-install zip intl mbstring pdo_mysql pdo_pgsql pgsql exif \
+RUN docker-php-ext-install zip intl mbstring pdo_mysql pdo_pgsql pgsql exif mysqli \
     && docker-php-ext-configure gd --with-jpeg=/usr/include/ --with-freetype=/usr/include/ \
     && docker-php-ext-install gd
 
@@ -37,6 +37,8 @@ RUN pecl install -o -f xdebug \
 
 COPY ./php.ini /usr/local/etc/php/
 COPY ./www.conf /usr/local/etc/php/
+
+ENV COMPOSER_ALLOW_SUPERUSER=1
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- \
