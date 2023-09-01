@@ -31,3 +31,8 @@ $test = 123;
 $link = 2222;
 
 var_dump($test, $link);
+
+$var1 = 'qwerty';
+$$var1 = 11155;
+
+var_dump($qwerty);
