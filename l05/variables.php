@@ -24,3 +24,10 @@ $all_students_list = [];
 $allStudentsList = [];
 $minSum = 12;
 
+$test = 'TEST';
+$link = &$test;
+
+$test = 123;
+$link = 2222;
+
+var_dump($test, $link);
