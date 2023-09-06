@@ -26,3 +26,5 @@ $heredoc = <<<TEXT
 TEXT;
 echo $heredoc, PHP_EOL;
 
+$concat = 'This string' . 'is conacatenated' . PHP_EOL . 'From two strings' . PHP_EOL;
+echo $concat;
