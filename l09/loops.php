@@ -62,14 +62,15 @@ foreach ($array as $key => $value) {
 //
 // LOOP { ... }
 //
-// <ul>
-//      <li><a href="/link1">Text 1</a></li>
-//      <li><a href="/link2">Text 2</a></li>
-//      <li>
-//          Text 3
-//          <ul>
-//              <li><a href="/link3_1">Text 3.1</a></li>
-//              <li><a href="/link3_2">Text 3.2</a></li>
-//          </ul>
-//      </li>
-// </ul>
+?>
+ <ul>
+      <li><a href="/link1">Text 1</a></li>
+      <li><a href="/link2">Text 2</a></li>
+      <li>
+          Text 3
+          <ul>
+              <li><a href="/link3_1">Text 3.1</a></li>
+              <li><a href="/link3_2">Text 3.2</a></li>
+          </ul>
+      </li>
+ </ul>
